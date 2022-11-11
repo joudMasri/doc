@@ -1,0 +1,2504 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>library documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">library documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  PhoneComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>projects/ngx-interphase/src/lib/modules/phone/phone/phone.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                    <code><a href="https://angular.io/api/core/AfterViewInit" target="_blank" >AfterViewInit</a></code>
+                    <code><a href="https://angular.io/api/forms/ControlValueAccessor" target="_blank" >ControlValueAccessor</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">providers</td>
+                <td class="col-md-9">
+                            <code>PhonePipe</code>
+                                <code><a href="https://angular.io/api/common/TitleCasePipe" target="_blank" >TitleCasePipe</a></code>
+                            <code>StringPipe</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>lib-phone</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./phone.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./phone.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#control" >control</a>
+                            </li>
+                            <li>
+                                <a href="#countries" >countries</a>
+                            </li>
+                            <li>
+                                <a href="#dropdownRef" >dropdownRef</a>
+                            </li>
+                            <li>
+                                <a href="#expanded" >expanded</a>
+                            </li>
+                            <li>
+                                <a href="#focus" >focus</a>
+                            </li>
+                            <li>
+                                <a href="#onModelChange" >onModelChange</a>
+                            </li>
+                            <li>
+                                <a href="#onTouch" >onTouch</a>
+                            </li>
+                            <li>
+                                <a href="#phoneNumberRef" >phoneNumberRef</a>
+                            </li>
+                            <li>
+                                <a href="#phones" >phones</a>
+                            </li>
+                            <li>
+                                <a href="#requiredLength" >requiredLength</a>
+                            </li>
+                            <li>
+                                <a href="#searchInputRef" >searchInputRef</a>
+                            </li>
+                            <li>
+                                <a href="#touched" >touched</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#documentClick" >documentClick</a>
+                            </li>
+                            <li>
+                                <a href="#emitCodeValue" >emitCodeValue</a>
+                            </li>
+                            <li>
+                                <a href="#emitPhoneNumber" >emitPhoneNumber</a>
+                            </li>
+                            <li>
+                                <a href="#filter" >filter</a>
+                            </li>
+                            <li>
+                                <a href="#formatPhoneNumber" >formatPhoneNumber</a>
+                            </li>
+                            <li>
+                                <a href="#ngAfterViewInit" >ngAfterViewInit</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onKeydownHandler" >onKeydownHandler</a>
+                            </li>
+                            <li>
+                                <a href="#pickFirst" >pickFirst</a>
+                            </li>
+                            <li>
+                                <a href="#refill" >refill</a>
+                            </li>
+                            <li>
+                                <a href="#registerOnChange" >registerOnChange</a>
+                            </li>
+                            <li>
+                                <a href="#registerOnTouched" >registerOnTouched</a>
+                            </li>
+                            <li>
+                                <a href="#toggle" >toggle</a>
+                            </li>
+                            <li>
+                                <a href="#writeValue" >writeValue</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#absolute" >absolute</a>
+                            </li>
+                            <li>
+                                <a href="#animation" >animation</a>
+                            </li>
+                            <li>
+                                <a href="#autocomplete" >autocomplete</a>
+                            </li>
+                            <li>
+                                <a href="#bold" >bold</a>
+                            </li>
+                            <li>
+                                <a href="#border" >border</a>
+                            </li>
+                            <li>
+                                <a href="#class" >class</a>
+                            </li>
+                            <li>
+                                <a href="#disabled" >disabled</a>
+                            </li>
+                            <li>
+                                <a href="#isReactive" >isReactive</a>
+                            </li>
+                            <li>
+                                <a href="#label" >label</a>
+                            </li>
+                            <li>
+                                <a href="#labelTop" >labelTop</a>
+                            </li>
+                            <li>
+                                <a href="#name" >name</a>
+                            </li>
+                            <li>
+                                <a href="#required" >required</a>
+                            </li>
+                            <li>
+                                <a href="#sm" >sm</a>
+                            </li>
+                            <li>
+                                <a href="#value" >value</a>
+                            </li>
+                            <li>
+                                <a href="#virtualScroll" >virtualScroll</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Outputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#onValueChange" >onValueChange</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>HostListeners</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#document:click" >document:click</a>
+                            </li>
+                            <li>
+                                <a href="#document:keydown.escape" >document:keydown.escape</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#invalid" >invalid</a>
+                                </li>
+                                <li>
+                                    <a href="#pipeArgs" >pipeArgs</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(titleCasePipe: <a href="https://angular.io/api/common/TitleCasePipe" target="_blank">TitleCasePipe</a>, stringPipe: StringPipe, phonePipe: PhonePipe, cdRef: <a href="https://angular.io/api/core/ChangeDetectorRef" target="_blank">ChangeDetectorRef</a>, control: <a href="https://angular.io/api/forms/NgControl" target="_blank">NgControl</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">projects/ngx-interphase/src/lib/modules/phone/phone/phone.component.ts:19</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>titleCasePipe</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/common/TitleCasePipe" target="_blank" >TitleCasePipe</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>stringPipe</td>
+                                                  
+                                                        <td>
+                                                                    <code>StringPipe</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>phonePipe</td>
+                                                  
+                                                        <td>
+                                                                    <code>PhonePipe</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>cdRef</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/core/ChangeDetectorRef" target="_blank" >ChangeDetectorRef</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>control</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/forms/NgControl" target="_blank" >NgControl</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="inputs">Inputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="absolute"></a>
+                        <b>absolute</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="57" class="link-to-prism">projects/ngx-interphase/src/lib/modules/phone/phone/phone.component.ts:57</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="animation"></a>
+                        <b>animation</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="62" class="link-to-prism">projects/ngx-interphase/src/lib/modules/phone/phone/phone.component.ts:62</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="autocomplete"></a>
+                        <b>autocomplete</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="63" class="link-to-prism">projects/ngx-interphase/src/lib/modules/phone/phone/phone.component.ts:63</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="bold"></a>
+                        <b>bold</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="60" class="link-to-prism">projects/ngx-interphase/src/lib/modules/phone/phone/phone.component.ts:60</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="border"></a>
+                        <b>border</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">projects/ngx-interphase/src/lib/modules/phone/phone/phone.component.ts:58</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="class"></a>
+                        <b>class</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>string | null</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>null</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="55" class="link-to-prism">projects/ngx-interphase/src/lib/modules/phone/phone/phone.component.ts:55</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="disabled"></a>
+                        <b>disabled</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="59" class="link-to-prism">projects/ngx-interphase/src/lib/modules/phone/phone/phone.component.ts:59</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isReactive"></a>
+                        <b>isReactive</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="65" class="link-to-prism">projects/ngx-interphase/src/lib/modules/phone/phone/phone.component.ts:65</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="label"></a>
+                        <b>label</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>string | null</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;test&#x27;</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="53" class="link-to-prism">projects/ngx-interphase/src/lib/modules/phone/phone/phone.component.ts:53</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="labelTop"></a>
+                        <b>labelTop</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">projects/ngx-interphase/src/lib/modules/phone/phone/phone.component.ts:54</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="name"></a>
+                        <b>name</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>string | null</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>null</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="64" class="link-to-prism">projects/ngx-interphase/src/lib/modules/phone/phone/phone.component.ts:64</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="required"></a>
+                        <b>required</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">projects/ngx-interphase/src/lib/modules/phone/phone/phone.component.ts:56</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="sm"></a>
+                        <b>sm</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">projects/ngx-interphase/src/lib/modules/phone/phone/phone.component.ts:52</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="value"></a>
+                        <b>value</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>literal type</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{
+    country: { code: &quot;LB&quot;, name: &quot;Lebanon&quot; },
+    number: { prefix: 961, body: &#x27;&#x27; }
+  }</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">projects/ngx-interphase/src/lib/modules/phone/phone/phone.component.ts:40</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="virtualScroll"></a>
+                        <b>virtualScroll</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>boolean | null</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="61" class="link-to-prism">projects/ngx-interphase/src/lib/modules/phone/phone/phone.component.ts:61</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+    <section>
+    <h3 id="outputs">Outputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="onValueChange"></a>
+                        <b>onValueChange</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">projects/ngx-interphase/src/lib/modules/phone/phone/phone.component.ts:50</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3>HostListeners</h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="document:click"></a>
+                    <span class="name">
+                        <span ><b>document:click</b></span>
+                        <a href="#document:click"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <i>Arguments : </i><code>'$event' </code>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>document:click(event: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="145"
+                            class="link-to-prism">projects/ngx-interphase/src/lib/modules/phone/phone/phone.component.ts:145</a></div>
+                </td>
+            </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="document:keydown.escape"></a>
+                    <span class="name">
+                        <span ><b>document:keydown.escape</b></span>
+                        <a href="#document:keydown.escape"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <i>Arguments : </i><code>'$event' </code>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>document:keydown.escape()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="153"
+                            class="link-to-prism">projects/ngx-interphase/src/lib/modules/phone/phone/phone.component.ts:153</a></div>
+                </td>
+            </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="documentClick"></a>
+                    <span class="name">
+                        <span ><b>documentClick</b></span>
+                        <a href="#documentClick"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>documentClick(event: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@HostListener(&#x27;document:click&#x27;, [&#x27;$event&#x27;])<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="145"
+                            class="link-to-prism">projects/ngx-interphase/src/lib/modules/phone/phone/phone.component.ts:145</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="emitCodeValue"></a>
+                    <span class="name">
+                        <span ><b>emitCodeValue</b></span>
+                        <a href="#emitCodeValue"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>emitCodeValue(country: <a href="../interfaces/Country.html" target="_self">Country</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="84"
+                            class="link-to-prism">projects/ngx-interphase/src/lib/modules/phone/phone/phone.component.ts:84</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>country</td>
+                                    <td>
+                                                <code><a href="../interfaces/Country.html" target="_self" >Country</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="emitPhoneNumber"></a>
+                    <span class="name">
+                        <span ><b>emitPhoneNumber</b></span>
+                        <a href="#emitPhoneNumber"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>emitPhoneNumber()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="106"
+                            class="link-to-prism">projects/ngx-interphase/src/lib/modules/phone/phone/phone.component.ts:106</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="filter"></a>
+                    <span class="name">
+                        <span ><b>filter</b></span>
+                        <a href="#filter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>filter($event: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="128"
+                            class="link-to-prism">projects/ngx-interphase/src/lib/modules/phone/phone/phone.component.ts:128</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>$event</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="formatPhoneNumber"></a>
+                    <span class="name">
+                        <span ><b>formatPhoneNumber</b></span>
+                        <a href="#formatPhoneNumber"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>formatPhoneNumber(value: literal type)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="138"
+                            class="link-to-prism">projects/ngx-interphase/src/lib/modules/phone/phone/phone.component.ts:138</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>value</td>
+                                    <td>
+                                            <code>literal type</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngAfterViewInit"></a>
+                    <span class="name">
+                        <span ><b>ngAfterViewInit</b></span>
+                        <a href="#ngAfterViewInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngAfterViewInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="72"
+                            class="link-to-prism">projects/ngx-interphase/src/lib/modules/phone/phone/phone.component.ts:72</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="30"
+                            class="link-to-prism">projects/ngx-interphase/src/lib/modules/phone/phone/phone.component.ts:30</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onKeydownHandler"></a>
+                    <span class="name">
+                        <span ><b>onKeydownHandler</b></span>
+                        <a href="#onKeydownHandler"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onKeydownHandler()</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@HostListener(&#x27;document:keydown.escape&#x27;, [&#x27;$event&#x27;])<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="153"
+                            class="link-to-prism">projects/ngx-interphase/src/lib/modules/phone/phone/phone.component.ts:153</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="pickFirst"></a>
+                    <span class="name">
+                        <span ><b>pickFirst</b></span>
+                        <a href="#pickFirst"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>pickFirst()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="134"
+                            class="link-to-prism">projects/ngx-interphase/src/lib/modules/phone/phone/phone.component.ts:134</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="refill"></a>
+                    <span class="name">
+                        <span ><b>refill</b></span>
+                        <a href="#refill"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>refill()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="124"
+                            class="link-to-prism">projects/ngx-interphase/src/lib/modules/phone/phone/phone.component.ts:124</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="registerOnChange"></a>
+                    <span class="name">
+                        <span ><b>registerOnChange</b></span>
+                        <a href="#registerOnChange"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>registerOnChange(fn: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="168"
+                            class="link-to-prism">projects/ngx-interphase/src/lib/modules/phone/phone/phone.component.ts:168</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>fn</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="registerOnTouched"></a>
+                    <span class="name">
+                        <span ><b>registerOnTouched</b></span>
+                        <a href="#registerOnTouched"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>registerOnTouched(fn: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="171"
+                            class="link-to-prism">projects/ngx-interphase/src/lib/modules/phone/phone/phone.component.ts:171</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>fn</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="toggle"></a>
+                    <span class="name">
+                        <span ><b>toggle</b></span>
+                        <a href="#toggle"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>toggle()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="45"
+                            class="link-to-prism">projects/ngx-interphase/src/lib/modules/phone/phone/phone.component.ts:45</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="writeValue"></a>
+                    <span class="name">
+                        <span ><b>writeValue</b></span>
+                        <a href="#writeValue"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>writeValue(obj: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="160"
+                            class="link-to-prism">projects/ngx-interphase/src/lib/modules/phone/phone/phone.component.ts:160</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>obj</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="control"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>control</b></span>
+                        <a href="#control"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/forms/NgControl" target="_blank" >NgControl</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @Self()<br />@Optional()<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">projects/ngx-interphase/src/lib/modules/phone/phone/phone.component.ts:26</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="countries"></a>
+                    <span class="name">
+                        <span ><b>countries</b></span>
+                        <a href="#countries"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/Country.html" target="_self" >Country[]</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[...countries]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">projects/ngx-interphase/src/lib/modules/phone/phone/phone.component.ts:34</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dropdownRef"></a>
+                    <span class="name">
+                        <span ><b>dropdownRef</b></span>
+                        <a href="#dropdownRef"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/core/ElementRef" target="_blank" >ElementRef</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ViewChild(&#x27;dropdownRef&#x27;)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">projects/ngx-interphase/src/lib/modules/phone/phone/phone.component.ts:37</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="expanded"></a>
+                    <span class="name">
+                        <span ><b>expanded</b></span>
+                        <a href="#expanded"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">projects/ngx-interphase/src/lib/modules/phone/phone/phone.component.ts:31</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="focus"></a>
+                    <span class="name">
+                        <span ><b>focus</b></span>
+                        <a href="#focus"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">projects/ngx-interphase/src/lib/modules/phone/phone/phone.component.ts:33</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onModelChange"></a>
+                    <span class="name">
+                        <span ><b>onModelChange</b></span>
+                        <a href="#onModelChange"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank" >Function</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="158" class="link-to-prism">projects/ngx-interphase/src/lib/modules/phone/phone/phone.component.ts:158</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onTouch"></a>
+                    <span class="name">
+                        <span ><b>onTouch</b></span>
+                        <a href="#onTouch"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank" >Function</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="157" class="link-to-prism">projects/ngx-interphase/src/lib/modules/phone/phone/phone.component.ts:157</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="phoneNumberRef"></a>
+                    <span class="name">
+                        <span ><b>phoneNumberRef</b></span>
+                        <a href="#phoneNumberRef"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/core/ElementRef" target="_blank" >ElementRef</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ViewChild(&#x27;phoneNumberRef&#x27;)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">projects/ngx-interphase/src/lib/modules/phone/phone/phone.component.ts:39</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="phones"></a>
+                    <span class="name">
+                        <span ><b>phones</b></span>
+                        <a href="#phones"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>phones</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">projects/ngx-interphase/src/lib/modules/phone/phone/phone.component.ts:35</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="requiredLength"></a>
+                    <span class="name">
+                        <span ><b>requiredLength</b></span>
+                        <a href="#requiredLength"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>8</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="51" class="link-to-prism">projects/ngx-interphase/src/lib/modules/phone/phone/phone.component.ts:51</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="searchInputRef"></a>
+                    <span class="name">
+                        <span ><b>searchInputRef</b></span>
+                        <a href="#searchInputRef"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/core/ElementRef" target="_blank" >ElementRef</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ViewChild(&#x27;searchInputRef&#x27;)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">projects/ngx-interphase/src/lib/modules/phone/phone/phone.component.ts:38</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="touched"></a>
+                    <span class="name">
+                        <span ><b>touched</b></span>
+                        <a href="#touched"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">projects/ngx-interphase/src/lib/modules/phone/phone/phone.component.ts:32</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="invalid"></a>
+                        <span class="name"><b>invalid</b><a href="#invalid"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>invalid()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="67" class="link-to-prism">projects/ngx-interphase/src/lib/modules/phone/phone/phone.component.ts:67</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="pipeArgs"></a>
+                        <span class="name"><b>pipeArgs</b><a href="#pipeArgs"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>pipeArgs()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="119" class="link-to-prism">projects/ngx-interphase/src/lib/modules/phone/phone/phone.component.ts:119</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+</section>
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { TitleCasePipe } from &#x27;@angular/common&#x27;;
+import { Component, ElementRef, EventEmitter, HostListener, Input, OnInit, Optional, Output, Self, ViewChild, AfterViewInit, ChangeDetectorRef } from &#x27;@angular/core&#x27;;
+import { PhonePipe } from &#x27;../../../helpers/pipes/phone.pipe&#x27;;
+import { StringPipe } from &#x27;../../../helpers/pipes/string.pipe&#x27;;
+import { Country } from &#x27;../../../models/country&#x27;;
+import { ControlValueAccessor, NgControl, Validators } from &#x27;@angular/forms&#x27;;
+import { toggle } from &#x27;../../../../lib/animations/toggle.animation&#x27;;
+import { countries } from &#x27;../../../../lib/data/countries&#x27;;
+import { phones } from &#x27;../../../../lib/data/codes&#x27;;
+import { isNumberLengthValid } from &#x27;../../../helpers/validators/phone-validators&#x27;;
+
+@Component({
+  selector: &#x27;lib-phone&#x27;,
+  templateUrl: &#x27;./phone.component.html&#x27;,
+  styleUrls: [&#x27;./phone.component.scss&#x27;],
+  providers: [PhonePipe, TitleCasePipe, StringPipe],
+  animations: [toggle]
+})
+export class PhoneComponent implements OnInit, AfterViewInit, ControlValueAccessor {
+
+  constructor(
+    private titleCasePipe: TitleCasePipe,
+    private stringPipe: StringPipe,
+    private phonePipe: PhonePipe,
+    private cdRef: ChangeDetectorRef,
+    @Self() @Optional() public control: NgControl) {
+    if (this.control) this.control.valueAccessor &#x3D; this;
+  }
+
+  ngOnInit(): void {}
+  expanded &#x3D; false;
+  touched &#x3D; false;
+  focus &#x3D; false;
+  countries: Country[] &#x3D; [...countries];
+  phones: any &#x3D; phones;
+
+  @ViewChild(&#x27;dropdownRef&#x27;) dropdownRef!: ElementRef;
+  @ViewChild(&#x27;searchInputRef&#x27;) searchInputRef!: ElementRef;
+  @ViewChild(&#x27;phoneNumberRef&#x27;) phoneNumberRef!: ElementRef;
+  @Input() value: {country: Country, number: any} &#x3D; {
+    country: { code: &quot;LB&quot;, name: &quot;Lebanon&quot; },
+    number: { prefix: 961, body: &#x27;&#x27; }
+  };
+
+  toggle() {
+    this.expanded &#x3D; !this.expanded;
+    this.countries &#x3D; countries;
+  }
+
+  @Output(&#x27;onValueChange&#x27;) valueEmitter &#x3D; new EventEmitter&lt;any&gt;();
+  requiredLength &#x3D; 8;
+  @Input(&#x27;sm&#x27;) small &#x3D; false;
+  @Input(&#x27;label&#x27;) label: string | null &#x3D; &#x27;test&#x27;;
+  @Input(&#x27;labelTop&#x27;) labelTop &#x3D; false;
+  @Input(&#x27;class&#x27;) class: string | null &#x3D; null;
+  @Input(&#x27;required&#x27;) required &#x3D; true;
+  @Input(&#x27;absolute&#x27;) absolute &#x3D; false;
+  @Input(&#x27;border&#x27;) border &#x3D; true;
+  @Input(&#x27;disabled&#x27;) disabled &#x3D; false;
+  @Input(&#x27;bold&#x27;) bold &#x3D; false;
+  @Input(&#x27;virtualScroll&#x27;) virtualScroll: boolean | null &#x3D; true;
+  @Input(&#x27;animation&#x27;) animation &#x3D; true;
+  @Input(&#x27;autocomplete&#x27;) autocomplete &#x3D; false;
+  @Input(&#x27;name&#x27;) name: string | null &#x3D; null;
+  @Input(&#x27;isReactive&#x27;) isReactive &#x3D; true;
+
+  get invalid() {
+    return this.isReactive ? this.control.touched &amp;&amp; this.control.invalid &amp;&amp; !this.disabled :
+    this.touched &amp;&amp; this.phoneNumberRef.nativeElement.value &gt;&#x3D; 8 &amp;&amp; !this.disabled;
+  }
+
+  ngAfterViewInit(): void {
+    this.phoneNumberRef.nativeElement.value &#x3D; this.value.number.body;
+    if (this.control) {
+      if (this.required) {
+        this.control.control?.addValidators(Validators.required)
+      }
+      this.control.control?.addValidators(Validators.minLength(this.requiredLength));
+    }
+    this.cdRef.detectChanges();
+  }
+
+
+  emitCodeValue(country: Country) {
+    this.touched &#x3D; true;
+    this.value.country &#x3D; country;
+    const code &#x3D; this.phones[country.code];
+
+    if (+code &#x3D;&#x3D;&#x3D; 961) {
+      this.phoneNumberRef.nativeElement.value &#x3D;
+      this.phoneNumberRef.nativeElement.value.substring(0, 10);
+    }
+
+    this.value.country &#x3D; country;
+    this.value.number.prefix &#x3D; code;
+
+    if (this.control) {
+      this.onTouch();
+      this.onModelChange(this.phoneNumberRef.nativeElement.value);
+    }
+    else this.valueEmitter.emit(this.phoneNumberRef.nativeElement.value);
+
+    this.expanded &#x3D; false;
+  }
+
+  emitPhoneNumber() {
+    this.touched &#x3D; true;
+    this.value.number.body &#x3D;
+    this.phonePipe.transform(this.phoneNumberRef.nativeElement.value,
+      this.pipeArgs);
+    this.phoneNumberRef.nativeElement.value &#x3D; this.value.number.body;
+    if (this.control) {
+      this.onTouch();
+      this.onModelChange(this.formatPhoneNumber(this.value));
+    }
+    else this.valueEmitter.emit(this.formatPhoneNumber(this.value));
+  }
+
+  get pipeArgs() {
+    let maximum &#x3D; 15 - this.value.country.code.replace(/\s/g, &quot;&quot;).length;
+    return this.value.country.code &#x3D;&#x3D;&#x3D; &#x27;LB&#x27; ? 8 : maximum
+  }
+
+  refill() {
+    this.expanded &#x3D; false;
+    this.countries &#x3D; countries;
+  }
+  filter($event: any) {
+    this.expanded &#x3D; true;
+    const transformation &#x3D; this.titleCasePipe.transform(this.stringPipe.transform($event.target.value));
+    this.countries &#x3D; this.countries.filter(country &#x3D;&gt; country.name.includes(transformation));
+  }
+
+  pickFirst() {
+    this.emitCodeValue(this.countries[0]);
+  }
+
+  formatPhoneNumber(value: {country: Country, number: any}) : string {
+    let fOutput &#x3D; &#x60;${value.number.prefix}${value.number.body}&#x60;
+    let output &#x3D; fOutput.replace(/\s/g, &quot;&quot;);
+    return &#x60;+${output}&#x60;
+  }
+
+  @HostListener(&#x27;document:click&#x27;, [&#x27;$event&#x27;])
+  documentClick(event: any) {
+    if (!this.dropdownRef?.nativeElement?.contains(event.target) &amp;&amp;
+    !this.searchInputRef?.nativeElement.contains(event.target)) {
+      this.expanded &#x3D; false;
+    }
+  }
+
+  @HostListener(&#x27;document:keydown.escape&#x27;, [&#x27;$event&#x27;])
+  onKeydownHandler() {
+    this.expanded &#x3D; false;
+  }
+
+  onTouch!: Function;
+  onModelChange!: Function;
+
+  writeValue(obj: any): void {
+
+      this.value &#x3D; {
+        country: { code: &quot;LB&quot;, name: &quot;Lebanon&quot; },
+        number: { prefix: 961, body: obj }
+      };
+
+  }
+  registerOnChange(fn: any): void {
+    this.onModelChange &#x3D; fn;
+  }
+  registerOnTouched(fn: any): void {
+    this.onTouch &#x3D; fn;
+  }
+}
+
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div [class]&#x3D;&quot;class&quot;&gt;
+  &lt;label *ngIf&#x3D;&quot;label &amp;&amp; labelTop&quot;&gt;{{ label | titlecase }} &lt;span class&#x3D;&quot;color-error&quot; *ngIf&#x3D;&quot;required&quot;&gt;*&lt;/span&gt;&lt;/label&gt;
+  &lt;div class&#x3D;&quot;dropdown&quot;
+    [class.no-border]&#x3D;&quot;!border&quot;
+    [class.sm]&#x3D;&quot;small&quot;
+    [class.invalid]&#x3D;&quot;invalid&quot;
+    [class.focused]&#x3D;&quot;focus&quot;
+    #dropdownRef
+  &gt;
+  &lt;input
+    type&#x3D;&quot;text&quot;
+    #phoneNumberRef
+    [name]&#x3D;&quot;name || &#x27;&#x27;&quot;
+    [disabled]&#x3D;&quot;disabled&quot;
+    class&#x3D;&quot;muted-input m-0&quot;
+    placeholder&#x3D;&quot;xx xxx xxx&quot;
+    [ngModel]&#x3D;&quot;value.number.body | phone:pipeArgs&quot; 
+    (ngModelChange)&#x3D;&quot;value.number.body &#x3D; $event&quot;
+    (input)&#x3D;&quot;emitPhoneNumber()&quot;
+    (focus)&#x3D;&quot;focus &#x3D; true&quot;
+    (blur)&#x3D;&quot;focus &#x3D; false&quot;
+  &gt;
+  &lt;span *ngIf&#x3D;&quot;label &amp;&amp; !labelTop&quot; class&#x3D;&quot;float-label f-sm&quot;&gt;{{ label | titlecase}}
+    &lt;span *ngIf&#x3D;&quot;required&quot; class&#x3D;&quot;color-error&quot;&gt;*&lt;/span&gt;
+  &lt;/span&gt;
+    &lt;img
+      src&#x3D;&quot;assets/images/flags/svg/{{value.country.code | lowercase}}.svg&quot;
+      alt&#x3D;&quot;&quot;
+      (click)&#x3D;&quot;disabled ? null : toggle()&quot;
+    &gt;
+&lt;/div&gt;
+&lt;div
+  class&#x3D;&quot;dropdown-list&quot;
+  *ngIf&#x3D;&quot;expanded&quot;
+  #listRef
+  @toggle
+  [@.disabled]&#x3D;&quot;!animation&quot;
+  [class.absolute]&#x3D;&quot;absolute&quot;
+&gt;
+  &lt;div class&#x3D;&quot;px-5&quot;&gt;
+    &lt;input
+      #searchInputRef
+      type&#x3D;&quot;text&quot;
+      class&#x3D;&quot;input-sm&quot;
+      style&#x3D;&quot;border: none;&quot;
+      placeholder&#x3D;&quot;Find your country&quot;
+      (keydown.backspace)&#x3D;&quot;refill()&quot;
+      (keyup.enter)&#x3D;&quot;pickFirst()&quot;
+      (input)&#x3D;&quot;filter($event)&quot;
+    &gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;select-option d-f justify-space-between align-center&quot;
+    (click)&#x3D;&quot;emitCodeValue(country)&quot;
+    *ngFor&#x3D;&quot;let country of countries&quot;&gt;
+    {{ country.name }}
+    &lt;img src&#x3D;&quot;assets/images/flags/svg/{{country.code | lowercase}}.svg&quot; alt&#x3D;&quot;country.code&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;select-option d-f justify-center f-sm&quot; *ngIf&#x3D;&quot;countries.length &#x3D;&#x3D;&#x3D; 0&quot;&gt;
+    Nothing to show.
+  &lt;/div&gt;
+&lt;/div&gt;
+  &lt;small class&#x3D;&quot;f-sm color-error&quot; *ngIf&#x3D;&quot;isReactive &amp;&amp; control.touched &amp;&amp; !disabled&quot;&gt;
+    &lt;div *ngIf&#x3D;&quot;control?.hasError(&#x27;required&#x27;); else minRef&quot;&gt;
+      * This field is required.
+    &lt;/div&gt;
+    &lt;ng-template #minRef&gt;
+      &lt;div *ngIf&#x3D;&quot;control.hasError(&#x27;minlength&#x27;)&quot;&gt;
+        * Phone number should be at least {{ requiredLength }} characters.
+      &lt;/div&gt;
+    &lt;/ng-template&gt;
+    &lt;ng-content&gt;&lt;/ng-content&gt;
+  &lt;/small&gt;
+  &lt;small class&#x3D;&quot;f-sm color-error&quot; *ngIf&#x3D;&quot;!isReactive &amp;&amp; touched &amp;&amp; !disabled&quot;&gt;
+    &lt;div *ngIf&#x3D;&quot;phoneNumberRef.value.length &#x3D;&#x3D;&#x3D; 0; else minRef&quot;&gt;
+      * This field is required.
+    &lt;/div&gt;
+    &lt;ng-template #minRef&gt;
+      &lt;div *ngIf&#x3D;&quot;phoneNumberRef.value.length &lt; requiredLength&quot;&gt;
+        * Phone number should be at least {{ requiredLength }} characters.
+      &lt;/div&gt;
+    &lt;/ng-template&gt;
+    &lt;ng-content&gt;&lt;/ng-content&gt;
+  &lt;/small&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./phone.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">img {
+  height: 25px;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div [class]="class">  <label *ngIf="label && labelTop">{{ label | titlecase }} <span class="color-error" *ngIf="required">*</span></label>  <div class="dropdown"    [class.no-border]="!border"    [class.sm]="small"    [class.invalid]="invalid"    [class.focused]="focus"    #dropdownRef  >  <input    type="text"    #phoneNumberRef    [name]="name || \'\'"    [disabled]="disabled"    class="muted-input m-0"    placeholder="xx xxx xxx"    [ngModel]="value.number.body | phone:pipeArgs"     (ngModelChange)="value.number.body = $event"    (input)="emitPhoneNumber()"    (focus)="focus = true"    (blur)="focus = false"  >  <span *ngIf="label && !labelTop" class="float-label f-sm">{{ label | titlecase}}    <span *ngIf="required" class="color-error">*</span>  </span>    <img      src="assets/images/flags/svg/{{value.country.code | lowercase}}.svg"      alt=""      (click)="disabled ? null : toggle()"    ></div><div  class="dropdown-list"  *ngIf="expanded"  #listRef  @toggle  [@.disabled]="!animation"  [class.absolute]="absolute">  <div class="px-5">    <input      #searchInputRef      type="text"      class="input-sm"      style="border: none;"      placeholder="Find your country"      (keydown.backspace)="refill()"      (keyup.enter)="pickFirst()"      (input)="filter($event)"    >  </div>  <div class="select-option d-f justify-space-between align-center"    (click)="emitCodeValue(country)"    *ngFor="let country of countries">    {{ country.name }}    <img src="assets/images/flags/svg/{{country.code | lowercase}}.svg" alt="country.code">  </div>  <div class="select-option d-f justify-center f-sm" *ngIf="countries.length === 0">    Nothing to show.  </div></div>  <small class="f-sm color-error" *ngIf="isReactive && control.touched && !disabled">    <div *ngIf="control?.hasError(\'required\'); else minRef">      * This field is required.    </div>    <ng-template #minRef>      <div *ngIf="control.hasError(\'minlength\')">        * Phone number should be at least {{ requiredLength }} characters.      </div>    </ng-template>    <ng-content></ng-content>  </small>  <small class="f-sm color-error" *ngIf="!isReactive && touched && !disabled">    <div *ngIf="phoneNumberRef.value.length === 0; else minRef">      * This field is required.    </div>    <ng-template #minRef>      <div *ngIf="phoneNumberRef.value.length < requiredLength">        * Phone number should be at least {{ requiredLength }} characters.      </div>    </ng-template>    <ng-content></ng-content>  </small></div></div>'
+    var COMPONENTS = [{'name': 'ApiComponent', 'selector': 'app-api'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AutocompleteComponent', 'selector': 'lib-autocomplete'},{'name': 'CalendarComponent', 'selector': 'lib-calendar'},{'name': 'CardComponent', 'selector': 'lib-card'},{'name': 'ChartComponent', 'selector': 'lib-chart'},{'name': 'CheckboxComponent', 'selector': 'lib-checkbox'},{'name': 'ChipComponent', 'selector': 'lib-chip'},{'name': 'ColorPickerComponent', 'selector': 'lib-color-picker'},{'name': 'ComponentComponent', 'selector': 'app-component'},{'name': 'ComponentsComponent', 'selector': 'app-components'},{'name': 'CountriesComponent', 'selector': 'lib-countries'},{'name': 'DatePickerComponent', 'selector': 'lib-date-picker'},{'name': 'DialogComponent', 'selector': 'lib-dialog'},{'name': 'EventCardComponent', 'selector': 'lib-event-card'},{'name': 'ExamplesComponent', 'selector': 'app-examples'},{'name': 'FileComponent', 'selector': 'lib-file'},{'name': 'FilterCardComponent', 'selector': 'lib-filter-card'},{'name': 'HomeCardComponent', 'selector': 'app-home-card'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'InputChipsComponent', 'selector': 'lib-input-chips'},{'name': 'MessageComponent', 'selector': 'lib-message'},{'name': 'NgxInterphaseComponent', 'selector': 'lib-ngx-interphase'},{'name': 'OverviewComponent', 'selector': 'app-overview'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PhoneComponent', 'selector': 'lib-phone'},{'name': 'RadioComponent', 'selector': 'lib-radio'},{'name': 'ReactiveInputComponent', 'selector': 'lib-reactive-input'},{'name': 'SelectComponent', 'selector': 'lib-select'},{'name': 'SelectLangComponent', 'selector': 'lib-lang'},{'name': 'SidebarComponent', 'selector': 'lib-sidebar'},{'name': 'SwitcherComponent', 'selector': 'lib-switcher'},{'name': 'TableComponent', 'selector': 'lib-table'},{'name': 'TextareaComponent', 'selector': 'lib-textarea'},{'name': 'TimePickerComponent', 'selector': 'lib-time-picker'},{'name': 'WindowComponent', 'selector': 'lib-window'}];
+    var DIRECTIVES = [{'name': 'RippleDirective', 'selector': '[appRipple]'},{'name': 'TooltipDirective', 'selector': '[tooltip]'}];
+    var ACTUAL_COMPONENT = {'name': 'PhoneComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'PhoneComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,728 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>library documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">library documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content class">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Classes</li>
+  <li >Chart</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>projects/ngx-interphase/src/lib/modules/chart/chart/chart.component.ts</code>
+        </p>
+
+
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#hStep" >hStep</a>
+                            </li>
+                            <li>
+                                <a href="#wStep" >wStep</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+
+            <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="hStep"></a>
+                    <span class="name">
+                        <span ><b>hStep</b></span>
+                        <a href="#hStep"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="3" class="link-to-prism">projects/ngx-interphase/src/lib/modules/chart/chart/chart.component.ts:3</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="wStep"></a>
+                    <span class="name">
+                        <span ><b>wStep</b></span>
+                        <a href="#wStep"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="4" class="link-to-prism">projects/ngx-interphase/src/lib/modules/chart/chart/chart.component.ts:4</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+
+
+
+
+
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { AfterViewInit, ChangeDetectorRef, Component, ElementRef, HostListener, Input, OnChanges, OnInit, SimpleChanges, ViewChild } from &#x27;@angular/core&#x27;;
+export class Chart {
+  hStep!: number;
+  wStep!: number;
+}
+@Component({
+  selector: &#x27;lib-chart&#x27;,
+  templateUrl: &#x27;./chart.component.html&#x27;,
+  styleUrls: [&#x27;./chart.component.scss&#x27;]
+})
+export class ChartComponent implements OnInit, OnChanges, AfterViewInit {
+
+  constructor(private cdRef: ChangeDetectorRef) { }
+
+  @ViewChild(&#x27;svg&#x27;) svg!: ElementRef;
+  @ViewChild(&#x27;overlay&#x27;) overlay!: ElementRef&lt;HTMLDivElement&gt;;
+  @ViewChild(&#x27;donutCircle&#x27;) donutCircle!: ElementRef&lt;SVGCircleElement&gt;;
+
+  
+  ngAfterViewInit(): void {
+    if (this.type &#x3D;&#x3D;&#x3D; &#x27;pie&#x27;) {
+      this.svg.nativeElement.style.width &#x3D; &#x27;100%&#x27;;
+      this.svg.nativeElement.style.height &#x3D; &#x60;${this.pw}px&#x60;;
+    }
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+  
+    if (changes[&#x27;data&#x27;]?.currentValue) {
+      this.data &#x3D; changes[&#x27;data&#x27;]?.currentValue;
+      this.xValues &#x3D; changes[&#x27;data&#x27;]?.currentValue.labels;
+      this.yValues &#x3D; changes[&#x27;yValues&#x27;]?.currentValue;
+    }
+
+    if (changes[&#x27;type&#x27;].currentValue &#x3D;&#x3D;&#x3D; &#x27;pie&#x27; &amp;&amp; changes[&#x27;pieData&#x27;]?.currentValue.length &#x3D;&#x3D;&#x3D; 0 &amp;&amp; changes[&#x27;data&#x27;]?.currentValue.datasets.length &gt; 1) {
+      throw new Error(&#x60;Please make sure you entered valid pieData; e.g: [{label: .., value: .., backgroundColor?: ..}, ..]
+      warning: Do not use pie chart when you have more than one dataset&#x60;);
+    } 
+    
+    if (changes[&#x27;type&#x27;].currentValue &#x3D;&#x3D;&#x3D; &#x27;pie&#x27; &amp;&amp; this.data.datasets.length &#x3D;&#x3D;&#x3D; 1) {
+      this.pieData &#x3D; [];
+      this.data.labels.forEach((element, index) &#x3D;&gt; {
+        this.pieData.push({
+          label: element,
+          data: this.data.datasets[0].data[index],
+        })
+      });
+      this.total &#x3D; this.pieData.reduce((acc, obj) &#x3D;&gt; acc + obj.data, 0);
+      this.ngAfterContentInit();
+    }
+
+    if (changes[&#x27;type&#x27;]?.currentValue &#x3D;&#x3D;&#x3D; &#x27;radar&#x27;) {
+      this.rads &#x3D; [];
+      this.yValues.forEach((element: number) &#x3D;&gt; {
+        this.rads.push(element/2 * 10)
+      });
+      this.setUp();
+      this.radarViewBox &#x3D; &#x60;-${this.yValues[this.yValues.length - 1]*7/2*2.8} -${this.yValues[this.yValues.length - 1]*7/2*2.8} ${this.yValues[this.yValues.length - 1]*7*2.8} ${this.yValues[this.yValues.length - 1]*7*2.8}&#x60;
+    }
+    this.chart.hStep &#x3D; changes[&#x27;yValues&#x27;]?.currentValue.length ? changes[&#x27;yValues&#x27;]?.currentValue.length 
+    : this.yValues.length * this.yf;
+    
+    this.chart.wStep &#x3D; changes[&#x27;type&#x27;].currentValue &#x3D;&#x3D;&#x3D; &#x27;line&#x27; || changes[&#x27;type&#x27;].currentValue &#x3D;&#x3D;&#x3D; &#x27;point&#x27;  ? 
+    (this.xValues.length - 1) * this.xf : changes[&#x27;type&#x27;].currentValue &#x3D;&#x3D;&#x3D; &#x27;horizontal&#x27; ? 
+    this.yValues.length * this.xf : this.xValues.length * this.xf;
+    
+    this.chart.hStep &#x3D; changes[&#x27;type&#x27;].currentValue &#x3D;&#x3D;&#x3D; &#x27;horizontal&#x27; ? this.xValues.length * this.yf 
+    : this.yValues.length * this.yf;
+
+    this.chart.wStep &#x3D; changes[&#x27;type&#x27;].currentValue &#x3D;&#x3D;&#x3D; &#x27;line&#x27; || changes[&#x27;type&#x27;].currentValue &#x3D;&#x3D;&#x3D; &#x27;point&#x27; ? 
+    (this.xValues.length - 1) * this.xf : changes[&#x27;type&#x27;].currentValue &#x3D;&#x3D;&#x3D; &#x27;horizontal&#x27; ? 
+    this.yValues.length * this.xf : this.xValues.length * this.xf;
+
+    this.h &#x3D; this.chart.hStep + this.margin * 2;
+    this.w &#x3D; this.chart.wStep + this.margin * 2;
+ 
+    this.viewBox &#x3D; changes[&#x27;type&#x27;].currentValue &#x3D;&#x3D;&#x3D; &#x27;pie&#x27; ? 
+    &#x60;${-(this.pw/40)} ${-(this.pw/40)} ${this.pw/20} ${this.pw/20}&#x60; : &#x27;0 0 &#x27; + this.w + &#x27; &#x27; + this.h; 
+    this.tl &#x3D; &#x60; ${this.margin} ${this.margin} &#x60;;
+    this.tr &#x3D; &#x60; ${this.w - this.margin} ${this.margin} &#x60;;
+    this.bl &#x3D; &#x60; ${this.margin} ${this.h - this.margin} &#x60;;
+    this.br &#x3D; &#x60; ${this.w - this.margin} ${this.h - this.margin} &#x60;;
+    this.tlx &#x3D; this.margin;
+    this.tly &#x3D; this.margin;
+    this.trx &#x3D; this.w - this.margin;
+    this.try &#x3D; this.margin;
+    this.blx &#x3D; this.margin;
+    this.bly &#x3D; this.h - this.margin;
+    this.brx &#x3D; this.w - this.margin;
+    this.bry &#x3D; this.h - this.margin;
+
+
+  }
+ 
+  ngOnInit(): void {
+    this.type &#x3D;&#x3D;&#x3D; &#x27;radar&#x27; ? this.setUp() : null;
+  }
+
+  interval: any;
+  ngAfterContentInit(): void {
+    this.transformValuesToPercent();
+    this.interval &#x3D; setInterval(() &#x3D;&gt; this.increment(), this.pieData.length * 2);
+  }
+
+  increment() {
+    let i &#x3D; 0;
+    this.percent -&#x3D; this.pieData[i].data/this.total;
+    if (this.percent &lt;&#x3D; 0) {
+      this.percent &#x3D; 0;
+      clearInterval(this.interval);
+    }
+    i++;
+  }
+
+  @Input(&#x27;type&#x27;) type: string &#x3D; &#x27;line&#x27;;
+  @Input(&#x27;guidelines&#x27;) guidelines: boolean &#x3D; true;
+  @Input(&#x27;donut&#x27;) donut &#x3D; false;
+  @Input(&#x27;legend&#x27;) legend &#x3D; true;
+  @Input(&#x27;legendPosition&#x27;) position &#x3D; &#x27;top&#x27;;
+  @Input(&#x27;data&#x27;) data: 
+  {labels: any[], datasets: {label?: string, backgroundColor?: string, data: number[], dashed?: boolean}[]} &#x3D; 
+   {
+    labels: [&#x27;Jan&#x27;, &#x27;Feb&#x27;, &#x27;Mar&#x27;, &#x27;Apr&#x27;, &#x27;May&#x27;, &#x27;Jun&#x27;, &#x27;Jul&#x27;, &#x27;Aug&#x27;],
+    datasets: [
+      {
+        label: &#x27;First&#x27;,
+        data: [65, 59, 80, 81, 56, 55, 40, 75],
+        dashed: false
+      },
+      {
+        label: &#x27;Second&#x27;,
+        data: [28, 48, 40, 19, 8, 27, 90, 20],
+        dashed: true
+      },
+      {
+        label: &#x27;Third&#x27;,
+        data: [55, 18, 90, 60, 14, 80, 10, 50]
+      },
+      {
+        label: &#x27;Fourth&#x27;,
+        data: [70, 20, 40, 70, 50, 50, 90, 60]
+      },
+      {
+        label: &#x27;Fourth&#x27;,
+        data: [80, 60, 11,17, 80, 80, 90, 50]
+      },
+      {
+        label: &#x27;Fifth&#x27;,
+        data: [60, 60, 40, 60, 60, 50, 50, 50]
+      }
+    ]
+  }
+
+  @Input(&#x27;pieData&#x27;) pieData: any[] &#x3D; [
+    {
+      label: &#x27;Jan&#x27;,
+      data: 80,
+    },
+    {
+      label: &#x27;Feb&#x27;,
+      data: 30,
+    },
+    {
+      label: &#x27;Mar&#x27;,
+      data: 16,
+    },
+    {
+      label: &#x27;Apr&#x27;,
+      data: 40,
+    },
+    {
+      label: &#x27;May&#x27;,
+      data: 50,
+    },
+
+  ]
+
+  xValues &#x3D; this.data.labels;
+  @Input(&#x27;yValues&#x27;) yValues: number[] &#x3D; [];
+
+  xf &#x3D; 3;
+  yf &#x3D; 1;
+  margin &#x3D; this.yf;
+
+  chart: Chart &#x3D; new Chart();
+
+  viewBox!: string;
+  h!: number;
+  w!: number;
+  tl!: string;
+  tr!: string;
+  bl!: string;
+  br!: string;
+  tlx!: number;
+  tly!: number;
+  trx!: number;
+  try!: number;
+  blx!: number;
+  bly!: number;
+  brx!: number;
+  bry!: number;
+
+  getPathD(numbers: number[]) {
+    let points: string &#x3D; &#x27;M &#x27;;
+    for (let i &#x3D; 0; i &lt; numbers.length; i++) {
+      points +&#x3D;(&#x60;${this.blx + i * this.xf},${(this.yValues.length) + 1 - numbers[i]/10}&#x60;);
+      if (!(i &#x3D;&#x3D;&#x3D; numbers.length - 1)) {
+        points +&#x3D; &#x27; L &#x27;
+      }
+    }
+    return points;
+  }
+
+  getBefore(numbers: number[]) {
+    let points: string &#x3D; &#x27;M &#x27;;
+      for (let i &#x3D; 0; i &lt; numbers.length; i++) {
+        points +&#x3D;(&#x60; ${this.blx + i * this.xf},${this.h - this.margin} L&#x60;);
+      }
+    return points;
+  }
+  get step() {
+    return this.chart.wStep/(this.data.labels.length);
+  };
+
+  get strokeWidth() {return this.xf/(1.5 * this.data.datasets.length);}
+
+  getBarPath(i: number, j: number) {
+    return &#x60;M ${this.margin + this.step/2 + (this.step * i) 
+    + this.getSpace(j, this.strokeWidth)} ${this.bly} V ${(this.yValues.length + 1) - (this.data.datasets[j].data[i])/10}&#x60;
+  }
+
+  getBarBefore(i: number, j: number) {
+    return &#x60;M ${this.margin + this.step/2 + (this.step * i) 
+    + this.getSpace(j, this.strokeWidth)} ${this.bly} V ${this.bly}&#x60;
+  }
+
+  get hoStep() {
+    return this.chart.hStep/(this.data.labels.length);
+  }
+
+  get strokeWidthForH() {return this.yf/(2 * this.data.datasets.length)}
+  
+  getSpace(j: number, strokeWidth: number) {
+    if (this.data.datasets.length % 2 &#x3D;&#x3D;&#x3D; 0) {
+      let compared &#x3D; this.data.datasets.length/2;
+      if (j &lt; compared) {
+        return -((compared - j) * strokeWidth - strokeWidth/2);
+      } else if (j &#x3D;&#x3D;&#x3D; compared) {
+        return strokeWidth/2;
+      } else {
+        return (j - compared) * strokeWidth  + strokeWidth/2;
+      }
+    } else {
+      let compared &#x3D; Math.floor(this.data.datasets.length/2);
+      if (j &lt; compared) {
+        return (-j - 1) * strokeWidth;
+      } else if (j &#x3D;&#x3D;&#x3D; compared) {
+        return 0;
+      } else {
+        return ((j) - compared) * strokeWidth;
+      }
+    }
+  } 
+
+  getHorizontalPath(i: number, j: number) {
+    return &#x60;M ${this.margin} ${this.margin + this.hoStep/2 + (this.hoStep * i) 
+    + this.getSpace(j, this.strokeWidthForH)} H ${
+      (this.data.datasets[j].data[i]) * (this.brx - this.margin) / (this.yValues[this.yValues.length - 1] * 10) + this.margin
+    }&#x60;
+  }
+ 
+  getHorizontalBefore(i: number, j: number) {
+    return &#x60;M ${this.margin} ${this.margin + this.hoStep/2 + (this.hoStep * i) 
+    + this.getSpace(j, this.strokeWidthForH)} H ${
+      this.blx
+    }&#x60;
+  }
+
+  // legend
+  lw &#x3D; this.data.datasets.length + this.margin * 2;
+  lh &#x3D; this.lw/25;
+  c &#x3D; this.lw/100;
+
+
+  // Pie
+  total &#x3D; this.pieData.reduce((acc, obj) &#x3D;&gt; acc + obj.data, 0);
+  percent &#x3D; 1;
+  pw &#x3D; 500;
+  radius &#x3D; 50;
+  squareHeight &#x3D; 1;
+
+  transformValuesToPercent() {
+    this.pieData &#x3D; this.pieData.sort((a,b) &#x3D;&gt; a.data - b.data);
+    let cumulativePercent &#x3D; 0;
+
+    this.pieData.forEach(element &#x3D;&gt; {
+      element.percent &#x3D; element.data/this.total;
+      element.startX &#x3D; this.getCoordinatesForPercent(cumulativePercent)[0];
+      element.startY &#x3D; this.getCoordinatesForPercent(cumulativePercent)[1]
+
+      cumulativePercent +&#x3D; element.percent;
+
+      element.endX &#x3D; this.getCoordinatesForPercent(cumulativePercent)[0];
+      element.endY &#x3D; this.getCoordinatesForPercent(cumulativePercent)[1];
+    });
+
+  }
+
+  getCoordinatesForPercent(percent: number, radius: number &#x3D; this.radius) {
+    const x &#x3D; Math.cos(2 * Math.PI * percent) * radius;
+    const y &#x3D; Math.sin(2 * Math.PI * percent) * radius;
+    return [x, y];
+  }
+
+  // Radar
+  rads &#x3D; [5, 10, 15, 20, 25, 30, 35, 40, 45, 50];
+  radarViewBox &#x3D; &#x27;-70 -70 140 140&#x27;;
+
+  setUp() {
+    this.rads.forEach(element &#x3D;&gt; {
+      this.getPoints(element);
+    });
+
+    console.log(&#x27;hi&#x27;)
+  }
+
+  els: any[] &#x3D; [];
+
+  getPoints(radius: number) {
+    let cumulativePercent &#x3D; 0.75;
+    let percent &#x3D; 1/this.data.labels.length;
+    for (let i &#x3D; 0; i &lt; this.data.labels.length; i++) {
+      let el: any &#x3D; {};
+      el.startX &#x3D; this.getCoordinatesForPercent(cumulativePercent, radius)[0];
+      el.startY &#x3D; this.getCoordinatesForPercent(cumulativePercent, radius)[1];
+
+      cumulativePercent +&#x3D; percent;
+
+      el.endX &#x3D; this.getCoordinatesForPercent(cumulativePercent, radius)[0];
+      el.endY &#x3D; this.getCoordinatesForPercent(cumulativePercent, radius)[1];
+      this.els.push(el);
+    }
+
+  }
+
+  get sliced() : any[] {
+    let arr &#x3D; [...this.els];
+    let sliced: any[] &#x3D; [];
+    while(arr.length) {
+      sliced.push(arr.splice(0,this.rads.length));
+    }
+    
+    return sliced;
+  }
+
+  
+  get d() : any[] {
+    let arr &#x3D; [...this.els];
+    let sliced: any[] &#x3D; [];
+    while(arr.length) {
+      sliced.push(arr.splice(0,this.data.labels.length));
+    }
+    
+    return sliced;
+  }
+
+
+  getLines(slice: any) {
+    let lines: {x1?: number, y1?: number, x2?: number, y2?: number}[] &#x3D; [];
+    for (let i &#x3D; 0; i &lt; slice.length; i++) {
+      lines.push({x1: slice[i].startX, y1: slice[i].startY, x2: slice[i].endX, y2: slice[i].endY})
+    }
+    return lines;
+  }
+
+  getValuesPoints(numbers: number[]) {
+    let lines: string &#x3D; &#x27;M &#x27;;
+    let cumulativePercent &#x3D; 0.75;
+    let percent &#x3D; 1/this.data.labels.length;
+
+    for (let i &#x3D; 0; i &lt; numbers.length; i++) {
+      let el: any &#x3D; {};
+      el.startX &#x3D; this.getCoordinatesForPercent(cumulativePercent, numbers[i]/2)[0];
+      el.startY &#x3D; this.getCoordinatesForPercent(cumulativePercent, numbers[i]/2)[1];
+
+      cumulativePercent +&#x3D; percent;
+
+      el.endX &#x3D; this.getCoordinatesForPercent(cumulativePercent, numbers[i]/2)[0];
+      el.endY &#x3D; this.getCoordinatesForPercent(cumulativePercent, numbers[i]/2)[1];
+      lines +&#x3D; &#x60;${el.startX},${el.startY} &#x60;;
+      if (!(i &#x3D;&#x3D;&#x3D; numbers.length - 1)) {
+        lines +&#x3D; &#x27; L &#x27;
+      }
+      if (i &#x3D;&#x3D;&#x3D; numbers.length - 1) {
+        lines +&#x3D; 
+        &#x60;${this.getCoordinatesForPercent(cumulativePercent, numbers[0]/2)[0]},${this.getCoordinatesForPercent(cumulativePercent, numbers[0]/2)[1]} &#x60;;
+      }
+    }
+
+    return lines;
+  }
+
+  getValuesPointsBefore() {
+    let points: string &#x3D; &#x27;&#x27;;
+    for (let i &#x3D; 0; i &lt; this.data.labels.length; i++) {
+      points +&#x3D; &#x27;1,1 &#x27;
+    }
+    return points;
+  }
+
+  i: any | number &#x3D; null;
+
+  showOverlay($event: MouseEvent, i: any) {
+    this.pieData &#x3D; this.pieData.sort((a,b) &#x3D;&gt; a.value - b.value);
+
+    if (this.i !&#x3D;&#x3D; i) {
+      this.i &#x3D; i;
+      let top &#x3D; &#x60;${$event.pageY - 5}px&#x60;;
+      let left &#x3D; &#x60;${$event.pageX + 5}px&#x60;;
+      if (this.overlay) {
+        this.overlay.nativeElement.style.top &#x3D; top;
+        this.overlay.nativeElement.style.left &#x3D; left;
+        this.overlay.nativeElement.style.display &#x3D; &#x27;block&#x27;;
+      }
+    }
+
+  }
+
+  @HostListener(&#x27;document:mouseover&#x27;, [&#x27;$event&#x27;])
+  hideOverlay($event: any) {
+    if (!this.svg.nativeElement.contains($event.target)
+    || (this.donut &amp;&amp; this.donutCircle.nativeElement.contains($event.target)))
+    this.i &#x3D; null;
+  }
+
+  colors &#x3D; [
+    
+    &#x27;#044EB4&#x27;,
+    &#x27;#A9AABC&#x27;,
+    &#x27;#757687&#x27;,
+    &#x27;#E65063&#x27;,
+
+  ]
+
+  // colors &#x3D; [
+  //   &#x27;#044EB4&#x27;,
+  //   &#x27;#466DD8&#x27;,
+  //   &#x27;#708DFE&#x27;,
+  //   &#x27;#97AFFF&#x27;,
+  //   &#x27;#BDD2FF&#x27;,
+  // ];
+
+//   colors &#x3D; [
+//     &#x27;#044EB4&#x27;,
+// &#x27;#008FDF&#x27;,
+// &#x27;#00C8DE&#x27;,
+// &#x27;#6CFACD&#x27;,
+
+//   ]
+  
+// colors &#x3D; [&#x27;#044EB4&#x27;,&#x27;#A74BAF&#x27;,&#x27;#F15692&#x27;,&#x27;#FF836F&#x27;,&#x27;#FFBD5A&#x27;,&#x27;#F9F871&#x27;]
+
+//   colors &#x3D; [
+//     &#x27;#044EB4&#x27;,
+// &#x27;#5D54B8&#x27;,
+// &#x27;#875BB9&#x27;,
+// &#x27;#A963B9&#x27;,
+// &#x27;#C66EB9&#x27;,
+// &#x27;#DE7CB8&#x27;,
+//   ]
+  
+// colors &#x3D; [
+  
+// &#x27;#044EB4&#x27;,
+// &#x27;#A9AABC&#x27;,
+// &#x27;#757687&#x27;,
+// &#x27;#A80635&#x27;,
+// &#x27;#E65063&#x27;,
+
+// ]
+
+
+
+}
+</code></pre>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'class';
+            var COMPODOC_CURRENT_PAGE_URL = 'Chart.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
